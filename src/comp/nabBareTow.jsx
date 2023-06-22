@@ -29,7 +29,7 @@ let NabBareTow = () => {
                                 )}
                             </Disclosure.Button>
                         </div>
-                        <div className="hidden sm:ml-5 sm:block ">
+                        <div className="hidden sm:block ">
                             <div className="flex p-3 space-x-1 place-content-end px-14">
                             {navigationTab.map((item) => (<a href={item.href}
                                                              key={item.name}
@@ -48,10 +48,10 @@ let NabBareTow = () => {
 
 
                         </div>
-                        <div className="p-3 font-bold text-3xl text-fillBtn ">Landing</div>
+                        <div className="p-3  text-3xl text-fillBtn font-thin sm:font-bold ">Landing</div>
                         <div className="p-3">
                             <button
-                                className=" border-2 border-fillBtn py-2 px-16 rounded bg-fillBtn fill-blue-50 text-cyan-50 hover:bg-white hover:text-fillBtn"> Buy
+                                className=" border-2 border-fillBtn py-2 px-8 rounded bg-fillBtn fill-blue-50 text-cyan-50 hover:bg-white hover:text-fillBtn sm:px-16"> Buy
                                 Now
                             </button>
                         </div>
