@@ -29,8 +29,8 @@ let NabBareTow = () => {
                                 )}
                             </Disclosure.Button>
                         </div>
-                        <div className="hidden sm:block ">
-                            <div className="flex p-3 space-x-1 place-content-end px-14">
+                        <div className="hidden sm:flex">
+                            <div className="flex p-3 sm:px-16 md:px40 space-x-1 place-content-end ">
                             {navigationTab.map((item) => (<a href={item.href}
                                                              key={item.name}
                                                              className={classNames(item.current ? 'text-black' : 'text-fillBtn hover:text-red-300', 'px-3 py-2 rounded-md text-sm font-semibold')}
