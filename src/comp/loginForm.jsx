@@ -3,7 +3,7 @@
 export default function Example() {
     return (
         <>
-            <div className="container mx-auto border-2 max-w-fit p-4  my-14   ">
+            <div className="container mx-auto border-2 max-w-fit p-4  my-14  ">
                 <div className="flex min-h-full flex-1 flex-col px-6 py-12 lg:px-6 ">
                         <div className="mx-auto w-full max-w-sm ">
                             <img

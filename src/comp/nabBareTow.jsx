@@ -13,12 +13,12 @@ function classNames(...classes) {
 }
 
 let NabBareTow = () => {
-    return (<>
+    return (<div className="z-50 inset-0 ">
         <Disclosure>
             {({open}) => (
                 <>
-                    <nav className="flex gap-y-1.5 gap-x-36 justify-center align-middle mx-auto max-w-7xl sm:px-6  lg:px-8 px-2">
-                        <div className="flex-1 relative inset-y-0  flex items-center sm:hidden  ">
+                    <nav className="flex gap-y-1.5 gap-x-36 justify-center align-middle mx-auto max-w-7xl sm:px-6 lg:px-8 px-2  ">
+                        <div className="flex-1 relative inset-0  flex items-center sm:hidden  ">
                             {/* Mobile menu button*/}
                             <Disclosure.Button className=" inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-20">
                                 <span className="sr-only">Open main menu</span>
@@ -29,7 +29,7 @@ let NabBareTow = () => {
                                 )}
                             </Disclosure.Button>
                         </div>
-                        <div className="hidden sm:flex">
+                        <div className="hidden sm:flex z-50">
                             <div className="flex p-3 sm:px-16 md:px40 space-x-1 place-content-end ">
                             {navigationTab.map((item) => (<a href={item.href}
                                                              key={item.name}
@@ -56,7 +56,7 @@ let NabBareTow = () => {
                             </button>
                         </div>
                     </nav>
-                    <Disclosure.Panel className="sm:hidden">
+                    <Disclosure.Panel className=" sm:hidden  ">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigationTab.map((item) => (
                                 <Disclosure.Button
@@ -74,7 +74,7 @@ let NabBareTow = () => {
                     </Disclosure.Panel>
                 </>)}
         </Disclosure>
-    </>)
+    </div>)
 
 }
 export default NabBareTow;
