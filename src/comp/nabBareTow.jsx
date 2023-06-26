@@ -17,7 +17,7 @@ let NabBareTow = () => {
         <Disclosure>
             {({open}) => (
                 <>
-                    <nav className="flex gap-y-1.5 gap-x-36 justify-center align-middle mx-auto max-w-7xl sm:px-6 lg:px-8 px-2  ">
+                    <nav className="flex gap-y-1.5 gap-x-8 justify-center align-middle mx-auto max-w-7xl sm:px-6 lg:px-8 px-2  xl:gap-x-36 2xl:gap-x-44 ">
                         <div className="flex-1 relative inset-0  flex items-center sm:hidden  ">
                             {/* Mobile menu button*/}
                             <Disclosure.Button className=" inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-20">
